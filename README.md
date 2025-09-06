@@ -28,13 +28,7 @@ cd image-classificalgo
 pip install opencv-python scikit-learn joblib numpy
 ```
 
-### 3. Delete Old Model (Optional)
-
-```bash
-del knn_model.joblib  # or delete manually from the folder
-```
-
-### 4. Train the Model
+### 3. Train the Model
 
 Make sure your training images are inside `data/train/` in folders like `horses/` and `humans/`.
 
@@ -46,7 +40,7 @@ python train.py
 
 This will automatically create `knn_model.joblib` in the project folder.
 
-### 5. Test the Model
+### 4. Test the Model
 
 Put your test image inside `data/test/` and update the filename in `test.py`. as it is in the dataset or just use any image from training datat or internet.
 
